@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="teacher_dashboard.css">
+</head>
+<body>
+
+    <div class="options-tab">
+        <span><b>≡</b></span>
+        <div class="options">
+            <a href="index.html"><label id="home-option">Home</label></a><br>
+            <label id="profile-option">Profile</label><br>
+            <a id="contact-option" href="#contact"><label>Contact us</label></a> <br>
+            <label id="logout-option">Log Out</label>
+        </div>
+    </div>
+    <div style="display: none;" id="go-back-container">
+        <img id="go-back" src="icons/icons8-go-back-64.png" alt="go back">
+    </div>
+    
+    <main>
+        <div style="display: none;" id="logout-container">
+        <p id="logout-text" style="display: inline-block;">Are you sure you want to logout?</p> <br>
+        <button style="color: white; background-color: red;" id="logout-yes-btn">YES</button>
+        <button style="color: white; background-color: green;" id="logout-no-btn">NO</button>
+        </div>
+
+        <div id="hide-for-search">
+            <section id="banner" data-video="images/banner">
+                <img src="image/geniusera0.png" alt="" id="GENIUSERAlogo">
+                <div class="inner">
+                    <header>
+                        <h1>WELCOME</h1>
+                        <span class="welcome-teacher" id="welcome-gender-status"></span>
+                        <span class="welcome-teacher" id="welcome-teacher-name"></span>
+                         <h3>You're Now Known To Every Student😊</h3>
+                    </header>
+                </div>
+            </section>
+            <br> <br>
+            <div id="half-brain-container">
+                <h4 id="half-brain">You're someone's half brain now!</h4>
+              </div>
+              <br><br>
+
+            <div id="guide-container">
+                <p id="guide-text">
+                    <b>Welcome to Our platform!</b> <br>
+                    We're excited to have you on board.
+                    <br>Please note that your dashboard maybe empty at the moment, but don't worry-this is just the beginning of your journey with us.
+                    <br>
+                    <br>As you continue to edit your profile, be sure to keep your loaction information up-to-date in case you decide to migrate to new
+                    area.
+                    This will ensure that students can easily find you and stay connected, even if you move.
+                    <br>
+                    <br> We're here to support you every step of the way, so feel free to reach out if you have any questions or concerns.
+                    <br> <b>Happy Teaching!</b>
+                    <br>
+                    <br> <small><i><b>Sincerely,</b></i></small>
+                    <br> <small><i><b>@GeniusEra</b></i></small>
+                </p>
+            </div>
+            <div id="read-container">
+                <span id="read">please read all</span>
+            </div>
+
+        <!-- <div class="cards">
+            <div class="card" id="personal-teacher">
+                <a href="#">
+                    <video width="100%"poster="image/personal_teacher.png">
+                        <source src="video/teacher1.mp4" type="video/mp4"></video> 
+                </a>
+                <div class="description">GET A PERSONAL TEACHER NOW</div>
+            </div> -->
+    
+            <!-- <div class="card">
+                <a href="quiz/quiz.html">
+                    <video width="100%" poster="image/quiz.png">
+                        <source src="video/heat.mp4" type="video/mp4"></video>
+                </a>
+                <div class="description">BE A GOOD SCIENCE AND MATH QUIZ HERO</div>
+            </div>
+    
+            <div class="card">
+                <a href="geniusera_ai.html">
+                    <video width="100%"   poster="image/instantanswer.png">
+                        <source src="video/heat.mp4" type="video/mp4"></video>
+                </a>
+                <div class="description">GET INSTANT ANSWER TO YOUR QUESTIONS NOW</div>
+            </div>
+    
+            <div class="card">
+                <a href="#">
+                    <video width="100%" poster="image/quetionns.png">
+                        <source src="video/teacher2.mp4" type="video/mp4"></video>
+                </a>
+                <div class="description">GET YOUR EXAMINABLE QUESTIONS NOW</div>
+            </div>
+        </div> -->
+</div>
+        <!-- <img style="display: none;" id="search-go-back" src="icons/icons8-go-back-64.png" alt="go back">
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search a region, district or town">
+        </div>       
+
+        <div id="results"></div>
+
+        <div id="data-table-container">
+        <table border="2" id="data-table">
+            <thead style="background-color: green; color: white;">
+                <tr></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <hr> -->
+
+        <!-- display student profile details -->
+        <!-- <div style="display: none;" id="student-profile-container">
+            <img id="profile-image" src="image/profile-logo-3.png" alt="">
+            <br> <br>
+            <h3 style="font-size: 40px;" id="student-name"></h3> <br>
+            <p id="student-email"></p> <br>
+            <p id="student-phone"></p> <br>
+            <br>
+            <a href="student_edit_profile.html">Edit profile</a>
+        </div> -->
+
+        <!-- display teacher details -->
+        <div style="display: none;" id="teacher-profile-container">
+            <img id="profile-image" src="image/profile-logo-3.png" alt="">
+            <br> <br>
+            <h3 style="font-size: 40px;" id="teacher-name"></h3> <br>
+            <p id="gender"></p><br>
+            <p id="region"></p><br>
+            <p id="district"></p> <br>
+            <p id="town"></p> <br>
+            <p id="teaches-in"></p> <br>
+            <p id="subject"></p> <br>
+            <p id="amount"></p> <br>
+            <p id="email"></p> <br>
+            <p id="phone"></p> <br>
+            <p id="link"></p> <br>
+            <a href="teacher_edit_profile.html">Edit profile</a>
+            <br><br>
+        </div>
+
+<br>
+        <div id="last-container">
+    <div class="contact">
+        <h3 id="contact">CONTACT</h3><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Help Center</a><br><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Complaint</a><br><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Share your Story</a><br><br>
+    </div>
+
+    <hr color="black">
+    <div class="last">
+        <a>&copy;2024 Genius Era</a><br><br>
+        <a href="terms-of-use.html">Terms of use|</a><br><br>
+        <a href="policy.html">Privacy policy|</a><br>
+    </div>
+</div>
+</main>
+
+<script src="teacher_dashboard.js"></script>
+</body>
+</html>

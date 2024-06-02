@@ -1,0 +1,123 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Style */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Main Container */
+main {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Container */
+.register-form-container {
+    width: 100%;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Style */
+#signUpText {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.textField, 
+#phone {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.textField:focus, 
+#phone:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Submit Button */
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color:#4CAF50 ;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #45a049;
+}
+
+/* Error Labels */
+#pendingLbl, 
+#pendingError {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+
+    #signUpText {
+        font-size: 20px;
+    }
+
+    .textField, 
+    #phone {
+        padding: 8px;
+    }
+
+    #submitBtn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

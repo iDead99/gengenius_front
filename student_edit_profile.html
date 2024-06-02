@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="student_edit_profile.css">
+</head>
+<body>
+    <main>
+
+        <div id="edit-profile-container">
+            
+            <form id="form" method="post">
+                <br>
+                <label id="pendingLbl"></label>
+                <label id="pendingError"></label>
+                <h3 id="signUpText">EDIT PROFILE</h3>
+                <label style="text-align: center; color: rgb(2, 149, 83);">Enter fields you want to edit</label> <br>
+                
+                <input style="display: none;" class="textField" type="text" id="first-name" name="first-name" placeholder="first name" readonly>
+                <input style="display: none;" class="textField" type="text" id="last-name" name="last-name" placeholder="last name" readonly>
+                <input class="textField" type="text" id="username" name="username" placeholder="username" required> <br>
+                <input class="textField" type="email" id="email" name="email" placeholder="email" required> <br>
+                <select class="textField" name="gender" id="gender" required></select> <br>
+                <label for="contact">Contact:</label>
+                <input class="textField" name="phone" id="phone" type="tel" placeholder="phone number" minlength="10" maxlength="10" required> <br>
+
+                <button id="submit-btn" type="submit">EDIT</button> <br>
+                
+            </form>
+        </div>
+
+        <div style="display: none;" id="profile-success-container">
+            <label id="profile-success-lbl">updated successfully</label>
+            <button id="profile-success-btn">OK</button>
+        </div>
+
+    </main>
+    <script src="student_edit_profile.js"></script>
+</body>
+</html>

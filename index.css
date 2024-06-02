@@ -1,0 +1,363 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #f3f3f3;
+  }
+.tab{
+    position: fixed;
+    display: inline-block;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    /* border-bottom-right-radius: 20px; */
+}
+.tab:hover{
+    background-color: #e8e8e8;
+    box-shadow: 0px 0px 50px 1px #d0cfcf;
+}
+.tab:hover #tab-content{
+    display: block;
+}
+
+
+#tab-content{
+    display: none;
+}
+
+#tab-content a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px 1px rgb(243, 243, 243);
+    border-bottom-right-radius: 20px;
+
+}
+#tab-content a:hover {
+    background-image: repeating-linear-gradient( to top, rgb(190, 190, 57), green);
+    color: white;
+   
+}
+
+
+.banner {
+    background-color: #e8e8e8;
+    padding: 50px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 1.6%;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.banner button {
+    margin: 1.6%;
+    padding: 10px 20px;
+    background-color: #006332;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    animation: bannerButtonAnimation 3s infinite ease;
+}
+
+@keyframes bannerButtonAnimation {
+    50% {
+        background-image: repeating-linear-gradient(to top, rgb(121, 192, 0), rgb(1, 94, 21));  
+    }
+
+}
+
+#GENIUSERAlogo{
+    position: absolute;
+    width: 25%;
+    display: inline-block;
+    top: -1rem; right: 0.5rem;
+}
+/* #GENIUSERAlogo{
+    position: absolute;
+    width: 25%;
+    display: inline-block;
+    top: -1rem; right: 0.5rem;
+} */
+
+nav{
+    padding: 0.6rem;
+    text-align: center;
+    align-content: center;
+    background-color: #f3f3f3;
+    box-shadow: 0px 0px 30px 1px #8d8d8d;
+}
+
+nav a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: #006332;
+   padding-right: 1.1rem; padding-left:1.1rem; 
+   margin: 0.8%;
+   box-shadow: 0px 0px 20px rgb(185, 185, 185);
+}
+nav a:hover{
+    background-color: rgb(228, 228, 228);
+    color: rgb(29, 70, 29);
+ }
+ #half-brain-container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
+ #half-brain{
+    position: relative;
+    left: 100%;
+    color: black;
+ }
+ #half-brain{
+    animation: move-half-brain 5s infinite linear;
+ }
+ @keyframes move-half-brain {
+    to{transform: translateX(-300%);}
+ }
+
+
+#signupBtn button {
+    color: #053b1d;
+    background-image: repeating-linear-gradient(to top, green, rgb(109, 109, 4));
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px 6px 10px 6px;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    animation: signupButtonAnimation 1s infinite alternate;
+
+}
+
+
+@keyframes signupButtonAnimation {
+    50% {
+        background-color: #09ad11;
+        color: #f3f3f3;
+    }
+}
+
+/* New styles */
+.contact, .about {
+    background-color: #f3f3f3;
+}
+
+h3, h4 {
+    text-align: center;
+    color: #333;
+}
+.icon-container{
+    display: flex;
+    margin-left:30% ;
+    align-items: center;
+}
+
+.icon-container > a {
+    display: block;
+    height: fit-content;
+    width: 14.2%;
+    padding-right: 5%;
+    float: left;
+    border-radius: 40px;
+
+    
+}
+
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+.offer.animate-offer{
+    box-shadow: 0px 0px 10px 5px rgb(0, 153, 0);
+    transition: box-shadow 0.5s ease-in-out;
+    border-radius: 20px;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+/* @keyframes offer-active {
+    50%{box-shadow: 0px 0px 10px 5px rgb(1, 189, 1);
+    border-radius: 20px;
+    }
+} */
+.card {
+    flex: 0 1 calc(48% - 1rem);
+    max-width: calc(48% - 1rem);
+    height: fit-content;
+    background-color: #f3f3f3;
+    margin: 1%;
+    box-shadow: 0px 0px 100px #8d8d8d;
+    border-radius: 20px;
+}
+.card:hover {
+    transform: scale(1.009);
+}
+.card p{
+    text-align: left;
+    padding: 10px;
+}
+
+.description {
+    color: #333;
+    text-align: center;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-size: 1rem;
+    
+}
+
+video {
+    margin-bottom: 5%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        flex: 0 1 calc(48% - 1rem);
+        max-width: calc(48% - 1rem);
+    }
+    #GENIUSERAlogo {
+        width: 30%;
+        top: 2rem; right: -1.7rem;
+    }
+
+}
+
+/* New styles for mobile phones */
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+    }
+    nav a{
+        padding-right: 8px; padding-left: 8px; 
+        font-size: 14px;
+    }
+
+    #GENIUSERAlogo {
+       
+        width: 30%;
+        top: 3rem; right: -1rem;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+      
+    }
+
+    .banner p {
+        /* font-size: 1rem; */
+        font-size: 16px;
+    }
+    #about-text {
+        height: 300px;
+        overflow: auto;
+    }
+
+    
+}
+
+.card ~ #offer {
+    padding-top: 1.6%;
+}
+
+.card  p {
+    padding-top: 6.7%;
+    padding-bottom: 4.6%;
+}
+
+h2#offer {
+    padding-bottom: 3%;
+}
+
+#contact ~ a {
+    text-decoration: none;
+    color: #333;
+    margin: 1%;
+}
+
+.about-container {
+    color: #333;
+    font-family: 'Open Sans', 'Roboto';
+    text-align: center;
+}
+.about-container.animate-about{
+    box-shadow: 0px 0px 10px 5px rgb(0, 153, 0);
+    transition: box-shadow 0.5s ease-in-out;
+    border-radius: 20px;
+    transition: border-radius 0.5s ease-in-out;
+}
+#about-text{
+    padding: 2%;
+    /* padding-right: 5%; */
+    font-size: 15px;
+    box-shadow: 0px 0px 50px rgb(231, 231, 231);
+    text-align: left;
+}
+.contact.animate-contact{
+    box-shadow: 0px 0px 10px 5px rgb(0, 153, 0);
+    transition: box-shadow 0.5s ease-in-out;
+    border-radius: 20px;
+    transition: border-radius 0.5s ease-in-out;
+}
+.last {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    font-size: small;
+}
+
+.last a {
+    text-decoration: none;
+    color: #010e1b;
+}
+
+.teacher-or-student-container .teacher-student {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: #033a13;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.beta{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px; right: 20px;
+    z-index: 9999;
+}

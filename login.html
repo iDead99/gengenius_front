@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="body">
+    <!-- <div class="main-container"> -->
+    <main>
+        <div class="login-form-container">
+    
+            <form id="form" method="">
+                <br>
+                <label id="pending-lbl"></label>
+                <label id="pending-error"></label>
+            <h3 id="login-text">LOGIN</h3>
+            
+            <input class="textField" type="text" id="username" name="username" required placeholder="username"> <br>
+            <span style="display: none;" id="user-pass-error">Incorrect username or password!</span> <br>
+            <input class="textField" type="password" id="password" name="password" required placeholder="password"> <br>
+            <div style="display: none;" id="forgot-password-container">
+                <label id="forgot-password-lbl">Forgot your password?</label>
+                <label id="forgot-password-link" ><a href="">Reset</a></label>
+            </div>
+            <button id="submitBtn" type="submit">LOGIN</button>
+            <br>
+            <div class="sign-container">
+                <label id="signIn-lbl">Don't have an account?</label>
+                <label id="sign-up" >Sign Up</label>
+            </div>
+        </form>
+        </div> <br>
+
+        <div style="display: none;" class="teacher-or-student-container">
+            <label id="register-txt">Register as:</label> <br> <br>
+            <button class="teacher-student" id="teacherBtn">TEACHER</button> <br>
+            <button class="teacher-student" id="studentBtn">STUDENT</button>
+
+        </div>
+    </main>
+<!-- </div> -->
+<script src="login.js"></script>
+</body>
+</html>

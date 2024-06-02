@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student_dashboard.css">
+</head>
+<body>
+
+    <div class="options-tab">
+        <span><b>≡</b></span>
+        <div class="options">
+            <a href="index.html"><label id="home-option">Home</label></a><br>
+            <label id="profile-option">Profile</label><br>
+            <a id="contact-option" href="#contact"><label>Contact us</label></a> <br>
+            <label id="logout-option">Log Out</label>
+        </div>
+    </div>
+    <div style="display: none;" id="go-back-container">
+        <img id="go-back" src="icons/icons8-go-back-64.png" alt="go back">
+    </div>
+    
+    <main>
+        <div style="display: none;" id="logout-container">
+        <p id="logout-text" style="display: inline-block;">Are you sure you want to logout?</p> <br>
+        <button style="color: white; background-color: red;" id="logout-yes-btn">YES</button>
+        <button style="color: white; background-color: green;" id="logout-no-btn">NO</button>
+        </div>
+
+        <div id="hide-for-search">
+            <section id="banner" data-video="images/banner">
+                <img src="image/geniusera0.png" alt="" id="GENIUSERAlogo">
+                <div class="inner">
+                    <header>
+                        <h1>WELCOME</h1>
+                         <h3>Your Winning is Our Priority</h3>
+                    </header>
+                </div>
+            </section>
+            <br> <br>
+
+            <div id="guide-container">
+                <p id="guide-text">
+                    <b>Welcome to Our Teacher Directory!</b> <br>
+                    We're excited to introduce you to our comprehensive directory of teachers from various regions, districts, and towns. This resource is designed to help you find the right teacher to support your academic and professional growth.
+                    <br> <b>How to Use Our Directory</b>
+                    <br><big>Search by Region, District, or Town:  </big> <a href="#search-bar"><img src="icons/search.png" alt=""></a>
+                    <br>Simply enter the name of the region, district, or town where you are located to find teachers in your area.
+                    <br><big>Browse by Table:</big>
+                    <br>Explore our table of teachers organized by their expertise, location, and other relevant criteria.
+                    <br> <b>Why Our Teachers Are Useful</b>
+                    <br>Our teachers are dedicated professionals who can provide valuable guidance and support in various aspects of your life and career. They can help you:
+                    Improve Your Academic Performance: Our teachers can offer personalized tutoring, homework help, and study strategies to enhance your understanding of specific subjects.
+                    <br><big>Develop New Skills:</big>
+                    <br>Whether you're looking to enhance your professional skills or pursue a new hobby, our teachers can provide expert guidance and mentorship.
+                    <br><big>Build Confidence:</big>
+                    <br>Our teachers can help you build confidence in your abilities by providing constructive feedback and encouragement.
+                </p>
+            </div>
+            <div id="read-container">
+                <span id="read">please read all</span>
+            </div>
+
+        <div class="cards">
+            <div class="card" id="personal-teacher">
+                <a href="#">
+                    <video width="100%"poster="image/personal_teacher.png">
+                        <!-- <source src="video/teacher1.mp4" type="video/mp4"></video>  -->
+                </a>
+                <div class="description">GET A PERSONAL TEACHER NOW</div>
+            </div>
+    
+            <div class="card">
+                <a href="quiz/quiz.html">
+                    <video width="100%" poster="image/quiz.png">
+                        <!-- <source src="video/heat.mp4" type="video/mp4"></video> -->
+                </a>
+                <div class="description">BE A GOOD SCIENCE AND MATH QUIZ HERO</div>
+            </div>
+    
+            <div class="card">
+                <a href="geniusera_ai.html">
+                    <video width="100%"   poster="image/instantanswer.png">
+                        <!-- <source src="video/heat.mp4" type="video/mp4"></video> -->
+                </a>
+                <div class="description">GET INSTANT ANSWER TO YOUR QUESTIONS NOW</div>
+            </div>
+    
+            <div class="card">
+                <a href="#">
+                    <video width="100%" poster="image/quetionns.png">
+                        <!-- <source src="video/teacher2.mp4" type="video/mp4"></video> -->
+                </a>
+                <div class="description">GET YOUR EXAMINABLE QUESTIONS NOW</div>
+            </div>
+        </div>
+</div>
+        <img style="display: none;" id="search-go-back" src="icons/icons8-go-back-64.png" alt="go back">
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search a region, district or town">
+        </div>       
+
+        <div id="results"></div>
+
+        <div id="data-table-container">
+        <table border="2" id="data-table">
+            <thead style="background-color: green; color: white;">
+                <tr></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <hr>
+
+        <!-- display student profile details -->
+        <div style="display: none;" id="student-profile-container">
+            <img id="profile-image" src="image/profile-logo-3.png" alt="">
+            <br> <br>
+            <h3 style="font-size: 40px;" id="student-name"></h3> <br>
+            <p id="student-email"></p> <br>
+            <p id="student-gender"></p> <br>
+            <p id="student-phone"></p> <br>
+            <br>
+            <a href="student_edit_profile.html">Edit profile</a>
+        </div>
+
+        <!-- display teacher details -->
+        <div style="display: none;" id="details">
+            <img id="profile-image" src="image/profile-logo-3.png" alt="">
+            <br><br>
+            <h3 style="font-size: 40px;" id="teacher-name"></h3><br>
+            <p id="teacher-region"></p> <br>
+            <p id="teacher-district"></p> <br>
+            <p id="teacher-town"></p> <br>
+            <p id="teaches-in"></p> <br>
+            <p id="teacher-subject"></p> <br>
+            <p id="teacher-amount"></p> <br>
+            <div id="teacher-email"></div> <br>
+            <p id="teacher-phone"></p> <br>
+            <p id="teacher-link"></p> <br>
+            <br> <br>
+            <p>Please note that the amount charged per subject suggested
+                by the teacher is negotiable. Kindly contact the teacher directly
+                to discuss and agree on a mutually acceptable rate.
+            </p> <br>
+        </div>
+<br>
+        <div id="last-container">
+    <div class="contact">
+        <h3 id="contact">CONTACT</h3><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Help Center</a><br><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Complaint</a><br><br>
+        <a href="https://Wa.me/+233247098016" target="_blank">Share your Story</a><br><br>
+    </div>
+
+    <hr color="black">
+    <div class="last">
+        <a>&copy;2024 Genius Era</a><br><br>
+        <a href="terms-of-use.html">Terms of use|</a><br><br>
+        <a href="policy.html">Privacy policy|</a><br>
+    </div>
+</div>
+</main>
+
+<script src="student_dashboard.js"></script>
+</body>
+</html>

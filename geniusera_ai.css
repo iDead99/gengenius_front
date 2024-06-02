@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(221, 248, 235);
+}
+#note-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px;
+}

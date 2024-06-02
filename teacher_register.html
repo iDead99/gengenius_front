@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration</title>
+    <link rel="stylesheet" href="teacher_register.css">
+</head>
+<body>
+    <!-- <div class="main-container"> -->
+    <main>
+
+        <div class="register-form-container">
+            
+        <form id="form" method="post">
+            <br>
+            <label id="pendingLbl"></label>
+            <label id="pendingError"></label>
+            <h3 id="signUpText">SIGN UP</h3>
+            
+            <input class="textField" type="text" id="username" name="username" required placeholder="username"> <br>
+            <span style="display: none;" id="username-error">username already exists</span>
+            <br>
+            <input class="textField" type="text" id="first-name" name="first-name" required placeholder="first name"> <br>
+            <br>
+            <input class="textField" type="text" id="last-name" name="last-name" required placeholder="last name"> <br>
+            <br>
+            <input class="textField" type="email" id="email" name="email" required placeholder="email"> <br>
+            <span style="display: none;" id="email-error">email already exists</span> <br>
+            <select class="textField" name="gender" id="gender" required></select>
+            <input class="textField" type="password" id="password" name="password" required placeholder="password"> <br>
+            <span style="display: none;" id="password-error"></span> <br>
+            <input class="textField" type="password" id="confirm-password" name="confirm-password" required placeholder="confirm password"> <br>
+
+            <br>
+            <label id="region-lbl" for="region">Region:</label><br>
+            <select class="textField" name="region" id="region"></select> <br>
+            <br>
+            <input class="textField" type="text" id="district" name="district" required placeholder="what's your district ?"> <br>
+            <br>
+            <input class="textField" type="text" id="town" name="town" required placeholder="what's your town ?"> <br>
+            <br>
+            <label for="qualification">Qualification:</label> <br>
+            <select class="textField" id="qualification" name="qualification" required></select> <br>
+            <br>
+            <label id="where-lbl">Where can you teach?</label> <br>
+            <!-- <label for="school-level">(e.g Primary, JHS, SHS/Vocational)</label> <br> -->
+            <label class="school-level" name="primary" id="primary">Primary</label>
+            <label class="school-level" name="jhs" id="jhs">JHS</label>
+            <label class="school-level" name="shs" id="shs">SHS</label>
+            <label class="school-level" name="vocational" id="vocational">Vocational</label> <br>
+            <!-- <textarea name="school-level" id="school-level" rows="5"></textarea> -->
+            <br>
+            <label >List subjects to teach:</label> <br>
+            <textarea name="subject" id="subject" rows="5" required></textarea> <br>
+            <br>
+            <label for="contact">Contact:</label> <br>
+            <input class="textField" name="phone" id="phone" type="tel" placeholder="phone number" required minlength="10" maxlength="10"> <br>
+            <br>
+            <input class="textField" name="link" id="link" type="text" placeholder="link(optional)"> <br>
+            <br>
+            <label for="amount">Suggest amount to be charged per subject</label> <br>
+            <input class="textField" name="amount" id="amount" type="number" required value="0.00" min="1"> <br> <br>
+            <button id="submit-btn" type="submit">DONE</button> <br>
+        </form>
+    </div>
+    </main>
+<!-- </div> -->
+
+    <script src="teacher_register.js"></script>
+</body>
+</html>

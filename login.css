@@ -1,0 +1,117 @@
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Login Form Container */
+.login-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Login Form */
+#form {
+    width: 320px;
+    padding: 40px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Title */
+#login-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Input Fields */
+.textField {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Forgot Password Container */
+#forgot-password-container {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Forgot Password Link */
+#forgot-password-link a {
+    color: #0056b3; /* Blue */
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Login Button */
+#submitBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #45a049; /* Darker Green on Hover */
+}
+
+
+#sign-up {
+    color: #0056b3; /* Blue */
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.teacher-or-student-container{
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 10px rgba(144, 245, 144, 0.746);
+    animation-name: scale-border;
+}
+
+#register-txt{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.teacher-or-student-container .teacher-student{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: rgba(144, 245, 144, 0.746);
+    font-size: 25px;
+    font-weight: bold;
+}
+.sign-container #sign-up{
+    color: navy;
+} 
