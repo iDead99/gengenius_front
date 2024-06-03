@@ -16,12 +16,21 @@ body{
     border-top-right-radius: 10px;
     /* border-bottom-right-radius: 20px; */
 }
-.tab:hover{
+/*.tab:hover{
+    background-color: #e8e8e8;
+    box-shadow: 0px 0px 50px 1px #d0cfcf;
+}*/
+.tab:hover,
+.tab:active {
     background-color: #e8e8e8;
     box-shadow: 0px 0px 50px 1px #d0cfcf;
 }
-.tab:hover #tab-content{
+/*.tab:hover #tab-content{
     display: block;
+}*/
+.tab:hover #tab-content,
+.tab:active #tab-content {
+  display: block;
 }
 
 
